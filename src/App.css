@@ -1,0 +1,184 @@
+#root {
+  height: 100vh;
+  width: 100vw;
+}
+
+.AppRouter {
+  overflow: hidden;
+}
+
+.App {
+  margin: 0;
+  padding: 0;
+  background-color: #242424;
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+
+  overflow: hidden;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.Content {
+  padding: 30px;
+  background-color: #242424;
+  height: 92vh;
+  width: 100%;
+  margin: 0;
+
+  color: white;
+}
+
+.TopBar {
+  height: 8vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.createEventButton {
+  background: RGBA(255,213,64, .15);
+  color: RGBA(255,213,64, 1);
+  border: none;
+  border-radius: 12px;
+  padding: 12px 18px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .3em;
+}
+
+.createEventButton:hover {
+  background: RGBA(255,213,64, 1);
+  color: #242424;
+  cursor: pointer;
+}
+
+.eventForm {
+  z-index: 5;
+}
+
+.desktopNavbar {
+  flex: 0 0 13em;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #1f1f1f;
+  padding: 2em;
+  padding-top: 2.8em;
+}
+
+.desktopNavbar .MainLogo {
+  width: 60%;
+  margin-bottom: 1em;
+}
+
+.desktopNavbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.desktopNavbar a:hover {
+  color: white;
+}
+
+.desktopNavbar a.active {
+  color: white;
+}
+
+
+.desktopNavbar ul li a {
+  color: #515151;
+  text-decoration: none;
+  display: block;
+  font-size: 2em;
+  font-weight: bold;
+  padding-top: 1em;
+}
+
+.mobileNavbar {
+  display: none;
+}
+
+.mobileTitle {
+  display: none;
+}
+
+@media screen and (max-width: 500px) {
+  .App {
+    background-color: #242424;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    overflow-y: scroll;
+    box-sizing: border-box;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .Content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-top: 0;
+
+    width: 100%;
+    color: white;
+  }
+
+  .TopBar {
+    display: none;
+  }
+
+  .desktopNavbar {
+    display: none;
+  }
+
+  .mobileTitle {
+    display: block;
+    margin: 0;
+  }
+
+  .mobileNavbar {
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    padding: 1em .5em .5em .5em;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: RGBA(36,36,36,.95);
+    backdrop-filter: blur(8px);
+  }
+
+  .mobileNavbarElement {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    color: #515151;
+    text-decoration: none;
+  }
+
+  .mobileNavbarElement:hover {
+    color: white;
+  }
+
+  .mobileNavbarElement.active {
+    color: white;
+  }
+
+  .mobileNavbarElement p {
+    margin: 1em;
+    font-size: .6em;
+  }
+}

@@ -1,0 +1,38 @@
+.modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #1f1f1f;
+    padding: 2em;
+    border-radius: 12px;
+}
+
+.close-button {
+    font-size: 30px;
+    color: #fff;
+    float: left;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 500px) {
+    .modal-content {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100vw;
+        height: 100vh;
+    }
+}
+
+.backButton {
+    width: fit-content;
+}

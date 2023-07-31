@@ -1,0 +1,16 @@
+.recentSearch {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #1f1f1f;
+    padding: 1em 1.2em;
+    border-radius: .6em;
+    gap: .4em;
+
+    color: #fff;
+}
+
+.searchKey {
+    margin: 0;
+}

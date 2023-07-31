@@ -1,0 +1,72 @@
+.navbarAuth {
+    display: flex;
+    gap: 1em;
+}
+
+.login {
+    background-color: #FFD540;
+    width: 6em;
+    border-radius: .6em;
+    padding: .9em;
+    color: #242424;
+    font-weight: bold;
+    text-decoration: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login:hover {
+    background-color: white;
+    cursor: pointer;
+}
+
+.register {
+    width: 6em;
+    border: solid 1px #FFD540;
+    border-radius: .6em;
+    padding: .9em;
+    color: #FFD540;
+    font-weight: bold;
+    text-decoration: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.register:hover {
+    background-color: white;
+    border: none;
+    color: #242424;
+    cursor: pointer;
+}
+
+.logoutButton {
+    background-color: #FFD540;
+    width: 8em;
+    border-radius: .6em;
+    padding: .9em;
+    color: #242424;
+    font-weight: bold;
+    text-decoration: none;
+    border: none;
+
+    font-size: 1em;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logoutButton:hover {
+    background-color: white;
+    cursor: pointer;
+}
+
+.navbarAuthUserInfo {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}

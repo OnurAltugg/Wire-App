@@ -1,0 +1,162 @@
+.blogPage {}
+
+.blogImageMobile {
+    display: none;
+}
+
+.blogPageContainer {
+    display: flex;
+    gap: 1.6em;
+}
+
+.backButton {
+    position: relative;
+    z-index: 2;
+}
+
+/* SIMILAR EVENTS */
+
+.blogSimilarEvents {
+    width: 30%;
+}
+
+.blogSimilarEventsList {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2em;
+
+    height: 100%;
+}
+
+/* CONTENT */
+
+.blogContent {
+    width: 70%;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.6em;
+    z-index: 2;
+}
+
+.blogContentHeader {
+    box-sizing: border-box;
+    padding-top: 2em;
+
+    display: flex;
+    gap: 1.2em;
+}
+
+.blogImage {
+    width: 24em;
+    height: 18em;
+
+    border-radius: 12px;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.blogHeaderInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.blogHeaderInfo h1 {
+    margin: 0;
+}
+
+.blogHeaderInfo h3 {
+    margin: 0;
+}
+
+.blogHeaderInfo p {
+    margin: 0;
+}
+
+.blogOraganizator {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+}
+
+.blogOrganizatorPic {
+    width: 3.6em;
+    height: 3.6em;
+    border-radius: 3em;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.blogLocation {
+    display: flex;
+    align-items: center;
+    gap: .5em;
+
+    color: white;
+    background-color: #1f1f1f;
+    padding: 1em 1.6em;
+    width: fit-content;
+    border-radius: 100px;
+}
+
+.blogLocTime {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+@media screen and (max-width: 500px) {
+
+    .backButton {
+        margin-top: 1em;
+        z-index: 2;
+    }
+
+    .blogPageContainer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .blogSimilarEvents {
+        display: none;
+    }
+
+    .blogImage {
+        display: none;
+    }
+
+    .blogImageMobile {
+        display: block;
+        width: 100%;
+        height: 16em;
+
+        z-index: 1;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+
+        box-shadow: inset 0 0 0 1000px rgba(0,0,0,.6);
+    }
+
+    .blogContent {
+        padding-top: 8em;
+        width: 100%;
+    }
+
+    .blogLocTime {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+}

@@ -1,0 +1,102 @@
+.homeMatchBox {
+    background-color: #1f1f1f;
+    border-radius: 12px;
+    padding: 1.6em;
+    width: 100%;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    gap: .3em;
+}
+
+.homeMatchBox:hover {
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.4);
+    cursor: pointer;
+}
+
+.homeMatchBoxContent {
+    display: flex;
+    justify-content: space-between;
+}
+
+.homeMatchBoxInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: .5em;
+}
+
+.homeMatchBoxTopTitleSection {
+    display: flex;
+    gap: .6em;
+}
+
+.homeMatchBoxUserStatus {
+    display: flex;
+    align-items: center;
+    font-size: bold;
+    gap: .2em;
+}
+
+.homeMatchBoxTimeSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: right;
+
+    text-align: right;
+}
+
+.homeMatchBoxDate {
+    margin: 0;
+}
+
+.homeMatchBoxTime {
+    margin: 0;
+    font-size: 2em;
+}
+
+.homeMatchBoxTags {
+    display: flex;
+    gap: 1em;
+}
+
+.homeMatchBoxSport {
+    display: flex;
+    gap: .4em;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFD540;
+    color: #1f1f1f;
+    padding: .6em 1.2em;
+    border-radius: 20em;
+}
+
+.homeMatchBoxSportImgWrapper {
+    height: 1em;
+    width: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.homeMatchBoxSportImgWrapper img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.homeMatchBoxSportTitle {
+    margin: 0;
+}
+
+.homeMatchBoxLocation {
+    display: flex;
+    gap: .4em;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    color: #1f1f1f;
+    padding: .6em 1.2em;
+    border-radius: 20em;
+}
